@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ff416c 100%);
+    background: var(--primary-gradient);
     min-height: 100vh;
     color: white;
     display: flex;
@@ -79,7 +79,7 @@ body {
 }
 
 #searchBtn {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ff416c 100%);
+    background: var(--warm-gradient);
     padding: 1rem 1.75rem;
     border: none;
     color: white;
