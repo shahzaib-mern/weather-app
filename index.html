@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Pakistan Weather Forecast</h1>
+            <p class="subtitle">Real-time weather updates for all major cities</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search for a city...">
+                <button id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="quick-cities">
+                <button class="quick-city" data-city="Karachi">Karachi</button>
+                <button class="quick-city" data-city="Lahore">Lahore</button>
+                <button class="quick-city" data-city="Islamabad">Islamabad</button>
+                <button class="quick-city" data-city="Peshawar">Peshawar</button>
+                <button class="quick-city" data-city="Quetta">Quetta</button>
+            </div>
+        </div>
+
+        <!-- Main Weather Card -->
+        <div class="weather-card">
+            <div class="card-content">
+                <div class="card-header">
+                    <div>
+                        <h2 id="cityName">City Name</h2>
+                        <p id="currentDate" class="date"></p>
+                    </div>
+                    <div id="weatherIcon" class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+                
+                <div class="weather-main">
+                    <div class="current-temp" id="currentTemp">--°C</div>
+                    <div class="weather-details">
+                        <p id="weatherDesc" class="weather-desc">Weather Description</p>
+                        <p class="feels-like">Feels like: <span id="feelsLike">--°C</span></p>
+                    </div>
+                </div>
+
+                <div class="weather-stats">
+                    <div class="stat">
+                        <p class="stat-label">Humidity</p>
+                        <p class="stat-value" id="humidity">--%</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Wind</p>
+                        <p class="stat-value" id="windSpeed">-- km/h</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Pressure</p>
+                        <p class="stat-value" id="pressure">-- hPa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="info-container">
+            <div class="info-card">
+                <h3 class="info-title">
+                    <i class="fas fa-info-circle"></i>
+                    Weather Information 
+                </h3>
+                <p class="info-text">Get accurate weather forecasts for all major cities of Pakistan including Karachi,
+                    Lahore, Islamabad, Peshawar, and Quetta.</p>
+                <p class="info-text">The data updates in real-time to provide you with the most current weather conditions.</p>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Major Cities
+                </h3>
+                <div class="cities-grid">
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Karachi</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Lahore</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Islamabad</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Peshawar</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Quetta</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Faisalabad</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Multan</span>
+                    </div>
+                    <div class="city-item">
+                        <i class="fas fa-city"></i>
+                        <span>Hyderabad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Pakistan Weather Forecast &copy; 2025</p>
+            <p class="footer-subtext">Live Weather Data</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
